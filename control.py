@@ -46,14 +46,12 @@ async def checking():
             check  = aio.Get(GROUP_NAME,'Checking')
             value = aio.Get(GROUP_NAME,FEED_NAME)
             print(value)
-            if ran == 0:
-                if value == '1':
-                    await sendCode(code1)
-                    ran = 1
-                    buttonImg.src = "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Ski_trail_rating_symbol-green_circle.svg/1200px-Ski_trail_rating_symbol-green_circle.svg.png"
-                else:
-                    await sendCode(code2)
-                    buttonImg.src = "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Red_X.svg/1200px-Red_X.svg.png"
+			if value == '1':
+			    await sendCode(code1)
+			    buttonImg.src = "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Ski_trail_rating_symbol-green_circle.svg/1200px-Ski_trail_rating_symbol-green_circle.svg.png"
+			else:
+			    await sendCode(code2)
+			    buttonImg.src = "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Red_X.svg/1200px-Red_X.svg.png"
             '''        
             try:
                 int(serial.last_line)
