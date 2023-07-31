@@ -1,0 +1,5 @@
+name = "Adafruit - SPIKE Prime"
+packages = [ "requests", "pyodide-http",]
+[[fetch]]
+files = [ "./Ada.py", "./info.py",
+        "./serial.py","./control.py"]
