@@ -1,0 +1,149 @@
+body {
+    font-family: "copperplate", fantasy;
+    margin:0px;
+    background: #ffe5cc;
+}
+
+button {
+    border-radius: 10px;
+    border: 0px solid #ffe5cc;
+    background-color:#b35900;
+    color: #ffe5cc;
+}
+
+.top {
+    position: sticky;
+    top: 0;
+    background: #ffb366;
+    margin:0px;
+    padding-top:20px;
+    padding-bottom:20px;
+    border-bottom: 1px solid black;
+    display: grid; 
+    grid-template-columns: auto auto auto;
+    z-index: 3;   
+}
+
+.buttons-cont {
+    display:grid;
+    grid-template-columns: auto auto;
+    padding-left:20px;
+    padding-right:20px;
+}
+
+.button {
+    width:40px;
+    height:40px;
+    text-align: center;
+    margin-left:5px;
+    margin-right:5px;
+}
+
+.runButton {
+    position:relative;
+    width:40px;
+    height:20px;
+    top:10px;
+    padding-top:0px;
+    padding-bottom:25px;
+    text-align: center;
+    margin-left:5px;
+    margin-right:5px;
+}
+
+.title {
+    text-align: center;
+    height:25px;
+    border: 2px solid-black;
+    margin-top: -15px;
+    font-size: 25px;
+}
+
+.statusCont {
+    display: grid; 
+    padding: 5px;
+    grid-template-columns: auto auto auto;
+    background-color: #ffbb99;
+    row-gap: 30px;
+    z-index: 1;
+}
+
+.status {
+    display:inline-block;
+    position: relative;
+    width: 20px;
+    top: 15%;
+    margin-left: 5%;
+    
+}
+
+.keyInputCont {
+    display:none;
+    positon: absolute;
+    grid-template-rows: auto auto auto auto;
+    background-color: #ffbb99;
+    height: 140px;
+    width:calc(100% - 70px);
+    z-index:5;
+}
+
+.checklist {
+    display: grid; 
+    grid-template-columns: auto auto auto auto auto auto;
+    row-gap: 10px;
+}
+
+.REPLconts {
+    position:relative;
+    display:grid;
+    grid-template-columns: auto auto;
+    column-gap: 10px;
+    padding:10px;
+    z-index:0;
+}
+
+.codeconts {
+    
+    height: 100px;
+    overflow: auto; 
+    z-index: 0;
+}
+
+.repls {
+    position: relative;
+    width: 100%;
+}
+
+.py-terminal {
+    position:relative;
+    height: 300px;
+    margin: 0px;
+    width: 95%;
+    
+}
+
+.SPrepl {
+    position:relative;
+    display: flex;
+    flex-direction: column-reverse;
+    background-color:black;
+    color:white;
+    height:300px;
+    width:95%;
+    margin:0;
+    border:1px solid #ccc;
+    font:14px/18px Times,Georgia, Garamond, Serif;
+    overflow:auto;
+    padding: 8px;
+}
+
+.lastline {
+    text-align: center; 
+}
+
+#lastline {
+    background-color: #cc4400;
+    color: white;
+    padding: 5px; 
+    border: 1px solid black; 
+}
